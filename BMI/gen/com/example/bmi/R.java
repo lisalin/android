@@ -32,6 +32,7 @@ public final class R {
         public static final int advice_heavy=0x7f040002;
         public static final int advice_light=0x7f040000;
         public static final int app_name=0x7f040003;
+        public static final int bmi_result=0x7f040009;
         public static final int button_text=0x7f040008;
         public static final int height_text=0x7f040006;
         public static final int hello_world=0x7f040004;

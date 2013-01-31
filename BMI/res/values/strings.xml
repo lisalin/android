@@ -7,5 +7,6 @@
     <string name="height_text">身高(cm)</string>
     <string name="weight_text">體重(kg)</string>
     <string name="button_text">計算 BMI 值</string>
+    <string name="bmi_result">Your BMI is </string>
 
 </resources>
