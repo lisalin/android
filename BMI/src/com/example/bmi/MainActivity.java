@@ -3,6 +3,10 @@ package com.example.bmi;
 import java.text.DecimalFormat;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -66,24 +70,44 @@ public class MainActivity extends Activity {
 		}
 
 		private void openOptionsDialog() {
-			// this is Dialog
-//			AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
-//			dialog.setTitle(R.string.about_title);
-//			dialog.setMessage(R.string.about_msg);
-//			
-//			dialog.setPositiveButton(R.string.dialog_OK,
-//                    new DialogInterface.OnClickListener(){
-//                        public void onClick(
-//                                DialogInterface dialoginterface, int i){
-//                                }
-//                        });
-//			
-//			dialog.show();
+			/* // this is Dialog
+			AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
+			dialog.setTitle(R.string.about_title);
+			dialog.setMessage(R.string.about_msg);
+			
+			dialog.setPositiveButton(R.string.dialog_OK,
+                    new DialogInterface.OnClickListener(){
+                        public void onClick(
+                                DialogInterface dialoginterface, int i){
+                                }
+                        });
+			
+			dialog.show();
 
 			// this is Toast
 			Toast popup = Toast.makeText(MainActivity.this,
 					R.string.toast_text, Toast.LENGTH_SHORT);
 			popup.show();
+			*/
+			new AlertDialog.Builder(MainActivity.this)
+				.setTitle(R.string.about_title)
+				.setMessage(R.string.about_msg)
+				.setPositiveButton(R.string.dialog_OK, 
+						new DialogInterface.OnClickListener() {
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+					}
+				})
+				.setNegativeButton(R.string.homepage_label, 
+						new DialogInterface.OnClickListener() {
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						Uri uri = Uri.parse(getString(R.string.uri_string));
+						Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+						startActivity(intent);
+					}
+				})
+				.show();
 		}
 	};
 

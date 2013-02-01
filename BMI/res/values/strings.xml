@@ -16,5 +16,7 @@
     
     <string name="dialog_OK">確認</string>
     <string name="toast_text">BMI 計算器</string>
+    <string name="homepage_label">首頁</string>
+    <string name="uri_string">http://androidbmi.googlecode.com/</string>
 
 </resources>

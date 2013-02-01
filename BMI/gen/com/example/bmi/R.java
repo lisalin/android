@@ -39,8 +39,10 @@ public final class R {
         public static final int dialog_OK=0x7f04000c;
         public static final int height_text=0x7f040006;
         public static final int hello_world=0x7f040004;
+        public static final int homepage_label=0x7f04000e;
         public static final int menu_settings=0x7f040005;
         public static final int toast_text=0x7f04000d;
+        public static final int uri_string=0x7f04000f;
         public static final int weight_text=0x7f040007;
     }
     public static final class style {
