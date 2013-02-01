@@ -18,5 +18,8 @@
     <string name="toast_text">BMI 計算器</string>
     <string name="homepage_label">首頁</string>
     <string name="uri_string">http://androidbmi.googlecode.com/</string>
+    
+    <string name="menu_about">關於</string>
+    <string name="menu_quit">結束</string>
 
 </resources>
